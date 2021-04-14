@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EV - Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="cssReset.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="leaflet-rotatedmarker.js"></script>
+
+    
+
+</head>
+<body style="margin:0px;">
+    <div class="grid-container">
+        <div class="header">
+            <p>EV - PLAYGOUND</p>
+        </div>
+        <div class="menu">
+            <p>Menu</p> 
+            <!-- create variables in js for buttons -->
+            <button class="firstButton">Dank Button</button>
+            <button class="secondButton">Second Button</button>
+        </div>
+        <div class="map">
+            <!-- <p>Map</p> -->
+                <div id="theMap"></div>
+            </div>
+<!-- Somehow link the current value of the slider to the map zoom level in Leaflet  -->
+            <div class="footer">Footer
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="20" value="11" class="slider" id="myRange">
+                    <p>Value: <span id="demo"></span></p>
+                  </div>
+            </div>
+        </div>
+        <script src='main.js'></script>
+</body>
+</html>
